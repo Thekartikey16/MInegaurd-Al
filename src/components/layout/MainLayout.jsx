@@ -4,7 +4,13 @@ import Sidebar from './Sidebar';
 import Header from './Header';
 
 export default function MainLayout() {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+  // Default open on desktop screen (>= 1024px)
+  const [sidebarOpen, setSidebarOpen] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return window.innerWidth >= 1024;
+    }
+    return false;
+  });
 
   const toggleSidebar = () => {
     setSidebarOpen(prev => !prev);
@@ -32,15 +38,15 @@ export default function MainLayout() {
   }, [sidebarOpen]);
 
   return (
-    <div className="flex min-h-screen bg-[var(--color-bg-primary)]">
-      {/* Slidebar Drawer */}
+    <div className="flex min-h-screen bg-[var(--color-bg-primary)] relative">
+      {/* Sidebar Navigation */}
       <Sidebar
         isOpen={sidebarOpen}
         onClose={() => setSidebarOpen(false)}
       />
 
-      {/* Main Full-Width Content Container */}
-      <div className="flex-1 flex flex-col min-h-screen w-full overflow-x-hidden">
+      {/* Main Full-Width / Shifted Content Container */}
+      <div className={`flex-1 flex flex-col min-h-screen w-full overflow-x-hidden transition-all duration-300 ${sidebarOpen ? 'lg:pl-[275px]' : 'lg:pl-0'}`}>
         <Header
           sidebarOpen={sidebarOpen}
           onToggleSidebar={toggleSidebar}
