@@ -46,7 +46,7 @@ export default function MainLayout() {
       />
 
       {/* Main Full-Width / Shifted Content Container */}
-      <div className={`flex-1 flex flex-col min-h-screen w-full overflow-x-hidden transition-all duration-300 ${sidebarOpen ? 'lg:pl-[275px]' : 'lg:pl-0'}`}>
+      <div className={`flex-1 flex flex-col min-h-screen w-full overflow-x-hidden transition-all duration-300 ${sidebarOpen ? 'lg:pl-[295px]' : 'lg:pl-0'}`}>
         <Header
           sidebarOpen={sidebarOpen}
           onToggleSidebar={toggleSidebar}
