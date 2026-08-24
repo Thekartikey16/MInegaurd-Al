@@ -1,0 +1,16 @@
+id,requirementId,regulationName,category,description,mineId,mineName,dueDate,submissionDate,status,riskLevel,evidence,reviewerId,remarks
+CR-001,REG-SAFETY-001,Mines Act 1952 — Safety Standards,Safety,Annual safety audit and risk assessment report submission,MINE-001,Rajmahal Opencast Mine,2026-09-15,,pending,medium,,,
+CR-002,REG-ENV-001,Environment Protection Act 1986,Environment,Quarterly environmental monitoring and compliance report,MINE-001,Rajmahal Opencast Mine,2026-10-01,,pending,low,,,
+CR-003,REG-SAFETY-002,Coal Mines Regulations 2017,Safety,Worker safety training records and certification,MINE-002,Gevra Mega Opencast Mine,2026-08-30,2026-08-15,compliant,low,/docs/cr-003-evidence.pdf,USR-002,All certifications up to date
+CR-004,REG-ENV-002,Water (Prevention and Control of Pollution) Act,Environment,Water quality monitoring at discharge points,MINE-003,Talcher Underground Mine,2026-07-31,,overdue,high,,,
+CR-005,REG-LABOR-001,Mines Act 1952 — Labor Provisions,Labor,Working hours compliance and overtime records,MINE-001,Rajmahal Opencast Mine,2026-08-15,2026-08-10,compliant,low,/docs/cr-005-evidence.pdf,USR-002,Corrected after violation VIO-008
+CR-006,REG-OPS-001,Coal Mines Regulations 2017,Operations,Updated mining plan and geological survey submission,MINE-009,Wani Underground Mine,2026-06-30,,non_compliant,high,,,Mining plan not updated after Section D expansion
+CR-007,REG-EQUIP-001,Metalliferous Mines Regulations,Equipment,Heavy equipment safety inspection and certification,MINE-004,Sonepur Bazari Opencast Mine,2026-09-30,,pending,medium,,,
+CR-008,REG-DOC-001,Mines Act 1952,Documentation,Annual return of mine statistics and production data,MINE-005,Singrauli Coal Mine,2026-08-31,2026-08-20,under_review,low,/docs/cr-008-evidence.pdf,USR-002,
+CR-009,REG-EMERG-001,Coal Mines Regulations 2017,Emergency Preparedness,Emergency response plan update and mock drill report,MINE-006,Jharia Underground Mine,2026-05-30,,overdue,critical,,,Critical — overdue by 3 months
+CR-010,REG-SAFETY-003,DGMS Circular on Ventilation,Safety,Underground mine ventilation survey and compliance report,MINE-006,Jharia Underground Mine,2026-06-30,,non_compliant,critical,,,Ventilation system found non-functional in inspection
+CR-011,REG-ENV-003,Air (Prevention and Control of Pollution) Act,Environment,Air quality monitoring and dust suppression compliance,MINE-004,Sonepur Bazari Opencast Mine,2026-08-31,,overdue,high,,,Dust suppression system non-operational
+CR-012,REG-SAFETY-001,Mines Act 1952 — Safety Standards,Safety,Annual safety audit and risk assessment report,MINE-008,Kusmunda Super OC Mine,2026-11-30,,pending,low,,,
+CR-013,REG-ENV-001,Environment Protection Act 1986,Environment,Quarterly environmental monitoring report,MINE-007,Singareni Opencast Mine,2026-10-01,,pending,low,,,
+CR-014,REG-SAFETY-004,Coal Mines Regulations 2017,Safety,Strata control and roof support compliance report,MINE-009,Wani Underground Mine,2026-07-15,,non_compliant,high,,,Roof bolting deviation found in inspection
+CR-015,REG-ENV-002,Water Act,Environment,Groundwater monitoring and testing report,MINE-003,Talcher Underground Mine,2026-06-30,,overdue,high,,,No water quality testing data for 6 months

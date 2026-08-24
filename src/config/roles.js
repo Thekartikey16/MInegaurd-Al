@@ -1,0 +1,83 @@
+export const ROLES = {
+  ADMIN: 'admin',
+  INSPECTOR: 'inspector',
+  MINE_OPERATOR: 'mine_operator',
+  AUDITOR: 'auditor',
+};
+
+export const ROLE_LABELS = {
+  [ROLES.ADMIN]: 'Government Administrator',
+  [ROLES.INSPECTOR]: 'Government Inspector',
+  [ROLES.MINE_OPERATOR]: 'Mine Operator',
+  [ROLES.AUDITOR]: 'Auditor',
+};
+
+export const ROLE_COLORS = {
+  [ROLES.ADMIN]: '#1E3A5F',
+  [ROLES.INSPECTOR]: '#2C5282',
+  [ROLES.MINE_OPERATOR]: '#E8A838',
+  [ROLES.AUDITOR]: '#805AD5',
+};
+
+const ALL = [ROLES.ADMIN, ROLES.INSPECTOR, ROLES.MINE_OPERATOR, ROLES.AUDITOR];
+const GOV = [ROLES.ADMIN, ROLES.INSPECTOR];
+const ADMIN_ONLY = [ROLES.ADMIN];
+const ADMIN_AUDITOR = [ROLES.ADMIN, ROLES.AUDITOR];
+
+export const PERMISSIONS = {
+  // Mines
+  VIEW_ALL_MINES: [ROLES.ADMIN, ROLES.AUDITOR],
+  VIEW_ASSIGNED_MINES: [ROLES.INSPECTOR],
+  VIEW_OWN_MINE: [ROLES.MINE_OPERATOR],
+  REGISTER_MINE: ADMIN_ONLY,
+
+  // Compliance
+  VIEW_ALL_COMPLIANCE: [ROLES.ADMIN, ROLES.AUDITOR],
+  VIEW_MINE_COMPLIANCE: [ROLES.INSPECTOR, ROLES.MINE_OPERATOR],
+  SUBMIT_COMPLIANCE: [ROLES.MINE_OPERATOR],
+  REVIEW_COMPLIANCE: [ROLES.ADMIN, ROLES.INSPECTOR],
+
+  // Inspections
+  CREATE_INSPECTION: [ROLES.ADMIN, ROLES.INSPECTOR],
+  CONDUCT_INSPECTION: [ROLES.INSPECTOR],
+  VIEW_ALL_INSPECTIONS: [ROLES.ADMIN, ROLES.AUDITOR],
+  VIEW_MINE_INSPECTIONS: [ROLES.INSPECTOR, ROLES.MINE_OPERATOR],
+
+  // Violations
+  RECORD_VIOLATION: GOV,
+  RESPOND_VIOLATION: [ROLES.MINE_OPERATOR],
+  VIEW_ALL_VIOLATIONS: [ROLES.ADMIN, ROLES.AUDITOR],
+
+  // Corrective Actions
+  CREATE_CORRECTIVE: GOV,
+  SUBMIT_CORRECTIVE: [ROLES.MINE_OPERATOR],
+  VERIFY_CORRECTIVE: [ROLES.INSPECTOR],
+
+  // AI / Analytics
+  VIEW_AI_INSIGHTS: ALL,
+  VIEW_ANALYTICS: [ROLES.ADMIN, ROLES.AUDITOR, ROLES.MINE_OPERATOR],
+  VIEW_GOVERNANCE_ANALYTICS: ADMIN_AUDITOR,
+
+  // Admin
+  VIEW_AUDIT_LOGS: ADMIN_AUDITOR,
+  MANAGE_USERS: ADMIN_ONLY,
+  MANAGE_REGULATIONS: ADMIN_ONLY,
+  VIEW_SETTINGS: ADMIN_ONLY,
+
+  // Reports
+  GENERATE_REPORTS: ALL,
+
+  // Alerts
+  VIEW_ALL_ALERTS: ALL,
+};
+
+export function hasPermission(role, permission) {
+  const allowed = PERMISSIONS[permission];
+  if (!allowed) return false;
+  return allowed.includes(role);
+}
+
+export function canAccessRoute(role, routePermissions) {
+  if (!routePermissions || routePermissions.length === 0) return true;
+  return routePermissions.some(p => hasPermission(role, p));
+}

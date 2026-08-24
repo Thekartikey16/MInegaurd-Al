@@ -1,0 +1,7 @@
+id,email,fullName,role,phone,department,designation,isActive,lastLogin
+USR-001,admin@mineguard.gov.in,Dr. Rajesh Kumar Sharma,admin,+91-9876543210,Directorate General of Mines Safety,Director General,true,2026-08-23T10:30:00
+USR-002,inspector@mineguard.gov.in,Sunil Prakash Verma,inspector,+91-9876543211,Mine Safety Inspectorate,Senior Inspector of Mines,true,2026-08-23T09:15:00
+USR-003,operator@coalmine.com,Amit Singh Rathore,mine_operator,+91-9876543212,Eastern Coalfields Ltd.,Chief Mining Engineer,true,2026-08-23T08:45:00
+USR-004,auditor@mineguard.gov.in,Priya Nair,auditor,+91-9876543213,Coal Mines Audit Division,Chief Auditor,true,2026-08-22T16:30:00
+USR-005,inspector2@mineguard.gov.in,Deepak Chandra Mishra,inspector,+91-9876543214,Mine Safety Inspectorate,Inspector of Mines,true,2026-08-22T14:00:00
+USR-006,operator2@secl.com,Vikram Patel,mine_operator,+91-9876543215,South Eastern Coalfields Ltd.,Mine Manager,true,2026-08-21T11:00:00

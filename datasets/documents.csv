@@ -1,0 +1,11 @@
+id,documentType,title,mineId,mineName,uploadedBy,fileType,expiryDate,status,createdAt
+DOC-001,Mining License,Mining Lease — Rajmahal OC,MINE-001,Rajmahal Opencast Mine,USR-003,PDF,2028-03-15,valid,2026-01-15
+DOC-002,Environmental Clearance,EC Certificate — Rajmahal OC,MINE-001,Rajmahal Opencast Mine,USR-003,PDF,2026-09-30,expiring_soon,2021-09-30
+DOC-003,Safety Certificate,Annual Safety Certificate — Gevra,MINE-002,Gevra Mega Opencast Mine,USR-006,PDF,2027-01-01,valid,2026-01-01
+DOC-004,Pollution Control Certificate,CPCB Consent — Talcher UG,MINE-003,Talcher Underground Mine,USR-003,PDF,2026-06-30,expired,2024-06-30
+DOC-005,Inspection Report,Emergency Inspection Report — Jharia,MINE-006,Jharia Underground Mine,USR-002,PDF,,valid,2026-04-10
+DOC-006,Mining License,Mining Lease — Jharia UG,MINE-006,Jharia Underground Mine,USR-003,PDF,2027-05-25,valid,2022-05-25
+DOC-007,Explosives License,Explosives License — Sonepur Bazari,MINE-004,Sonepur Bazari Opencast Mine,USR-003,PDF,2026-12-31,valid,2025-12-31
+DOC-008,Environmental Clearance,EC Certificate — Singrauli,MINE-005,Singrauli Coal Mine,USR-006,PDF,2029-01-01,valid,2024-01-01
+DOC-009,Water Discharge Permit,Water Discharge Permit — Jharia,MINE-006,Jharia Underground Mine,USR-003,PDF,2026-03-31,expired,2024-03-31
+DOC-010,Safety Certificate,Annual Safety Certificate — Kusmunda,MINE-008,Kusmunda Super OC Mine,USR-006,PDF,2027-06-30,valid,2026-06-30

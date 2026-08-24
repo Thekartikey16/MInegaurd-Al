@@ -1,0 +1,16 @@
+id,userId,userName,role,action,module,recordId,previousValue,newValue,ipAddress,createdAt
+AUD-001,USR-001,Dr. Rajesh Kumar Sharma,admin,Assigned emergency inspection,Inspections,INS-005,,"Inspector: Sunil Prakash Verma",10.0.1.100,2026-04-05T09:00:00
+AUD-002,USR-002,Sunil Prakash Verma,inspector,Completed inspection,Inspections,INS-005,"Status: In Progress","Status: Completed",10.0.1.101,2026-04-10T17:30:00
+AUD-003,USR-002,Sunil Prakash Verma,inspector,Created violation,Violations,VIO-001,,"Critical ventilation violation",10.0.1.101,2026-04-10T17:45:00
+AUD-004,USR-002,Sunil Prakash Verma,inspector,Created violation,Violations,VIO-002,,"Environmental discharge violation",10.0.1.101,2026-04-10T18:00:00
+AUD-005,USR-001,Dr. Rajesh Kumar Sharma,admin,Generated alert,Alerts,ALT-001,,"Critical: Mine fire detected",10.0.1.100,2026-04-10T08:30:00
+AUD-006,USR-003,Amit Singh Rathore,mine_operator,Uploaded compliance document,Compliance,CR-005,"Status: Overdue","Status: Under Review",192.168.1.50,2026-08-10T10:00:00
+AUD-007,USR-002,Sunil Prakash Verma,inspector,Verified corrective action,Corrective Actions,CA-007,"Status: Submitted","Status: Completed",10.0.1.101,2026-08-12T14:00:00
+AUD-008,USR-005,Deepak Chandra Mishra,inspector,Updated violation status,Violations,VIO-006,"Status: Open","Status: Remediation In Progress",10.0.1.102,2026-07-15T11:30:00
+AUD-009,USR-001,Dr. Rajesh Kumar Sharma,admin,Scheduled follow-up inspection,Inspections,INS-012,,"Jharia Underground Mine — Follow-up",10.0.1.100,2026-08-20T09:00:00
+AUD-010,USR-003,Amit Singh Rathore,mine_operator,Submitted corrective action evidence,Corrective Actions,CA-003,"Status: In Progress","Status: Submitted",192.168.1.50,2026-07-18T16:00:00
+AUD-011,USR-006,Vikram Patel,mine_operator,Submitted corrective action evidence,Corrective Actions,CA-008,"Status: In Progress","Status: Submitted",192.168.2.30,2026-07-20T10:00:00
+AUD-012,USR-005,Deepak Chandra Mishra,inspector,Verified corrective action,Corrective Actions,CA-008,"Status: Submitted","Status: Completed",10.0.1.102,2026-07-22T14:30:00
+AUD-013,USR-001,Dr. Rajesh Kumar Sharma,admin,Login,Authentication,,,"Successful login",10.0.1.100,2026-08-23T10:30:00
+AUD-014,USR-002,Sunil Prakash Verma,inspector,Reviewed compliance document,Compliance,CR-008,"Status: Pending","Status: Under Review",10.0.1.101,2026-08-21T11:00:00
+AUD-015,USR-001,Dr. Rajesh Kumar Sharma,admin,Updated risk model weights,Settings,,,"Safety: 0.25","Safety: 0.30",10.0.1.100,2026-08-15T16:00:00

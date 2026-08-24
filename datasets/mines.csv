@@ -1,0 +1,11 @@
+id,mineId,name,location,state,district,mineType,operatorId,operatorName,productionCapacity_MTPA,currentProduction_MTPA,workerCount,status,riskScore,complianceScore,lastInspection,nextInspection,openViolations,environmentalStatus,safetyStatus,latitude,longitude,createdAt
+MINE-001,JH-RAN-001,Rajmahal Opencast Mine,Rajmahal,Jharkhand,Godda,Opencast,USR-003,Eastern Coalfields Ltd.,12.5,10.2,850,Active,32,87,2026-07-15,2026-09-15,2,Moderate,Good,25.05,87.84,2020-03-15
+MINE-002,CG-KOR-002,Gevra Mega Opencast Mine,Gevra,Chhattisgarh,Korba,Opencast,USR-006,South Eastern Coalfields Ltd.,52.0,48.5,2200,Active,18,94,2026-08-01,2026-10-01,0,Good,Excellent,22.33,82.68,2018-07-10
+MINE-003,OD-ANG-003,Talcher Underground Mine,Talcher,Odisha,Angul,Underground,USR-003,Mahanadi Coalfields Ltd.,5.0,3.8,620,Active,68,62,2026-05-20,2026-08-20,5,Poor,Needs Improvement,20.95,85.23,2015-11-20
+MINE-004,WB-BUR-004,Sonepur Bazari Opencast Mine,Sonepur Bazari,West Bengal,Paschim Bardhaman,Opencast,USR-003,Eastern Coalfields Ltd.,20.0,17.5,1100,Active,45,78,2026-06-30,2026-09-30,3,Moderate,Moderate,23.73,87.07,2017-02-14
+MINE-005,MP-SIN-005,Singrauli Coal Mine,Singrauli,Madhya Pradesh,Singrauli,Mixed,USR-006,Northern Coalfields Ltd.,35.0,31.2,1800,Active,22,91,2026-07-25,2026-10-25,1,Good,Good,24.20,82.66,2016-09-01
+MINE-006,JH-DHN-006,Jharia Underground Mine,Jharia,Jharkhand,Dhanbad,Underground,USR-003,Bharat Coking Coal Ltd.,8.0,5.2,950,Under Review,82,48,2026-04-10,2026-07-10,8,Critical,Critical,23.75,86.42,2012-05-25
+MINE-007,TS-MNC-007,Singareni Opencast Mine,Ramagundam,Telangana,Mancherial,Opencast,USR-006,Singareni Collieries Company Ltd.,15.0,13.8,780,Active,28,89,2026-07-20,2026-10-20,1,Good,Good,18.76,79.50,2019-01-15
+MINE-008,CG-SRG-008,Kusmunda Super OC Mine,Kusmunda,Chhattisgarh,Surguja,Opencast,USR-006,South Eastern Coalfields Ltd.,45.0,42.0,2000,Active,15,96,2026-08-10,2026-11-10,0,Excellent,Excellent,22.35,82.70,2014-08-20
+MINE-009,MH-NAG-009,Wani Underground Mine,Wani,Maharashtra,Nagpur,Underground,USR-003,Western Coalfields Ltd.,4.0,2.9,420,Active,55,71,2026-06-05,2026-09-05,4,Moderate,Needs Improvement,20.06,78.95,2013-12-01
+MINE-010,OD-SND-010,Basundhara Opencast Mine,Basundhara,Odisha,Sundargarh,Opencast,USR-006,Mahanadi Coalfields Ltd.,25.0,22.1,1350,Active,38,83,2026-07-05,2026-10-05,2,Moderate,Good,22.11,84.01,2016-04-18
