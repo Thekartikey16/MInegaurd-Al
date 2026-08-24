@@ -148,7 +148,7 @@ export const mockAlerts = [
     description: 'Overdue inspection: Follow-up inspection was due on August 20. Reschedule immediately.',
     status: 'active',
     assignedTo: 'USR-001',
-    assignedToName: 'Dr. Rajesh Kumar Sharma',
+    assignedToName: 'Kartikey Singh',
     actionTaken: null,
     createdAt: '2026-08-21T08:00:00',
     resolvedAt: null,

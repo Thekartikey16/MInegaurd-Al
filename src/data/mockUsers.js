@@ -3,7 +3,7 @@ export const mockUsers = [
     id: 'USR-001',
     email: 'admin@mineguard.gov.in',
     password: 'admin123',
-    fullName: 'Dr. Rajesh Kumar Sharma',
+    fullName: 'Kartikey Singh',
     role: 'admin',
     phone: '+91-9876543210',
     department: 'Directorate General of Mines Safety',
